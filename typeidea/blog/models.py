@@ -33,6 +33,9 @@ class Category(models.Model):
         verbose_name="创建时间"
     )
 
+    def __str__(self):
+        return self.name
+
 
 
     class Meta:
@@ -66,6 +69,9 @@ class Tag(models.Model):
         auto_now_add=True,
         verbose_name="创建时间"
     )
+
+    def __str__(self):
+        return self.name
 
 
     class Meta:
@@ -119,6 +125,7 @@ class Post(models.Model):
         auto_now_add=True,
         verbose_name="创建时间"
     )
+
 
 
     class Meta:
